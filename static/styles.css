@@ -1,0 +1,36 @@
+nav .navbar-brand .brown
+{
+    color: #c29574;
+}
+
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+index
+{
+    font-family: century;
+    text-align: justify;
+    font-size:100%;
+}
+
+titulo
+{
+    font-size: 150%;
+    text-align: center;
+}
+
+result
+{
+    font-family: century;
+    text-align: justify;
+    font-size:120%;
+}
+
+checkbox
+{
+    font-family: century;
+    text-align: justify;
+    font-size:90%;
+}

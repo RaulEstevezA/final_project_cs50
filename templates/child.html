@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Child
+{% endblock %}
+
+{% block main %}
+<main class="container py-5 text-center">
+    <titulo>
+        CHOOSE THE ATTRIBUTES YOU WANT TO MIX
+        <br><br>
+    </titulo>
+    <checkbox>
+        <div class="container text-center">
+            GENDER, AGE (FROM 1 TO 4) AND CONSTITUTION ARE AUTOMATIC
+            <br><br><br>
+            <form action="/child" method="post">
+                <div class="row align-items-start">
+                    <form method="POST">
+                        <div class="col">
+                            TRANQUILITY
+                            <input type="checkbox" id="tranquilidad" name="tranquilidad">
+                            <br><br>
+                            HAPPINESS
+                            <input type="checkbox" id="alegria" name="alegria">
+                            <br><br>
+                            HUMOR
+                            <input type="checkbox" id="humor" name="humor">
+                            <br><br>
+                        </div>
+                        <div class="col">
+                            ADVENTURER
+                            <input type="checkbox" id="aventurero" name="aventurero">
+                            <br><br>
+                            ACTIVITY
+                            <input type="checkbox" id="actividad" name="actividad">
+                            <br><br>
+                            CURIOSITY
+                            <input type="checkbox" id="curioso" name="curioso">
+                            <br><br>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                            <input class="btn btn-primary" type="submit" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </checkbox>
+</main>
+{% endblock %}

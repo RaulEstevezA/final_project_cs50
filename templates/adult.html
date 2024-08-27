@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Adult
+{% endblock %}
+
+{% block main %}
+<main class="container py-5 text-center">
+    <titulo>
+        CHOOSE THE ATTRIBUTES YOU WANT TO MIX
+        <br><br>
+    </titulo>
+    <checkbox>
+        <div class="container text-center">
+            GENDER, AGE (FROM 16 TO 90) AND CONSTITUTION ARE AUTOMATIC
+            <br><br><br>
+            <form action="/adult" method="post">
+                <div class="row align-items-start">
+                    <form method="POST">
+                        <div class="col">
+                            DETERMINATION
+                            <input type="checkbox" id="determinacion" name="determinacion">
+                            <br><br>
+                            VISIONARY
+                            <input type="checkbox" id="visionario" name="visionario">
+                            <br><br>
+                            CREATIVITY
+                            <input type="checkbox" id="creatividad" name="creatividad">
+                            <br><br>
+                            INTEGRITY
+                            <input type="checkbox" id="integridad" name="integridad">
+                            <br><br>
+                            TALENT
+                            <input type="checkbox" id="talento" name="talento">
+                            <br><br>
+                            JUSTICE
+                            <input type="checkbox" id="justicia" name="justicia">
+                            <br><br>
+                            HUMOR
+                            <input type="checkbox" id="humor" name="humor">
+                            <br><br>
+                            JOY
+                            <input type="checkbox" id="alegria" name="alegria">
+                            <br><br>
+                            TRANQUILITY
+                            <input type="checkbox" id="tranquilidad" name="tranquilidad">
+                            <br><br>
+                        </div>
+                        <div class="col">
+                            CONCENTRATION
+                            <input type="checkbox" id="concentracion" name="concentracion">
+                            <br><br>
+                            CURIOSITY
+                            <input type="checkbox" id="curioso" name="curioso">
+                            <br><br>
+                            TRUST
+                            <input type="checkbox" id="confianza" name="confianza">
+                            <br><br>
+                            EMPATHY
+                            <input type="checkbox" id="empatia" name="empatia">
+                            <br><br>
+                            SINCERITY
+                            <input type="checkbox" id="sinceridad" name="sinceridad">
+                            <br><br>
+                            RESPECT
+                            <input type="checkbox" id="respeto" name="respeto">
+                            <br><br>
+                            KINDNESS
+                            <input type="checkbox" id="amabilidad" name="amabilidad">
+                            <br><br>
+                            RESOLUTION
+                            <input type="checkbox" id="resolucion" name="resolucion">
+                            <br><br>
+                            ADVENTURER
+                            <input type="checkbox" id="aventurero" name="aventurero">
+                            <br><br>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                            <input class="btn btn-primary" type="submit"value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </checkbox>
+</main>
+{% endblock %}

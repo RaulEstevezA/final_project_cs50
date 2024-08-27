@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Result
+{% endblock %}
+
+{% block main %}
+<main class="container py-5 text-center">
+    <titulo>
+        CHARACTER CREATED
+        <br><br>
+    </titulo>
+    <result>
+        The character created is gender {{ selected_options['dicto2'] }} whit {{ selected_options['dicto1'] }} years old,
+        has these physical attributes {% for category, value in selected_options['dicto3'].items() %}{{ value }}{% if not loop.last %}, {% endif %}{% endfor %}
+        and a personality {% for category, value in selected_options['dicto4'].items() %}{{ value }}{% if not loop.last %}, {% endif %}{% endfor %}.
+    </result>
+</main>
+{% endblock %}
+
+
+
+
+
+
+
+
+

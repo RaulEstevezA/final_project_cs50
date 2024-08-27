@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Young
+{% endblock %}
+
+{% block main %}
+<main class="container py-5 text-center">
+    <titulo>
+        CHOOSE THE ATTRIBUTES YOU WANT TO MIX
+        <br><br>
+    </titulo>
+    <checkbox>
+        <div class="container text-center">
+            GENDER, AGE (FROM 5 TO 15) AND CONSTITUTION ARE AUTOMATIC
+            <br><br><br>
+            <form action="/young" method="post">
+                <div class="row align-items-start">
+                    <form method="POST">
+                        <div class="col">
+                            CREATIVITY
+                            <input type="checkbox" id="creatividad" name="creatividad">
+                            <br><br>
+                            TALENT
+                            <input type="checkbox" id="talento" name="talento">
+                            <br><br>
+                            HUMOR
+                            <input type="checkbox" id="humor" name="humor">
+                            <br><br>
+                            JOY
+                            <input type="checkbox" id="alegria" name="alegria">
+                            <br><br>
+                            TRANQUILITY
+                            <input type="checkbox" id="tranquilidad" name="tranquilidad">
+                            <br><br>
+                            EDUCATION
+                            <input type="checkbox" id="educacion" name="educacion">
+                            <br><br>
+                        </div>
+                        <div class="col">
+                            CURIOSITY
+                            <input type="checkbox" id="curioso" name="curioso">
+                            <br><br>
+                            SINCERITY
+                            <input type="checkbox" id="sinceridad" name="sinceridad">
+                            <br><br>
+                            RESPECT
+                            <input type="checkbox" id="respeto" name="respeto">
+                            <br><br>
+                            ADVENTURER
+                            <input type="checkbox" id="aventurero" name="aventurero">
+                            <br><br>
+                            SOCIABLE
+                            <input type="checkbox" id="sociable" name="sociable">
+                            <br><br>
+                            SPORTMAN
+                            <input type="checkbox" id="deportista" name="deportista">
+                            <br><br>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block">
+                            <input class="btn btn-primary" type="submit" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </checkbox>
+</main>
+{% endblock %}
