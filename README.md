@@ -1,5 +1,12 @@
 # CHARACTER CREATOR
-#### Video Demo:  https://youtu.be/3sdUplYJKD0
+
+## Autor: Raul Estevez
+### GitHub profile: [RaulEstevezA](https://github.com/RaulEstevezA)
+### LinkedIn: [Raul Estevez](https://www.linkedin.com/in/raul-estevez-abella-9a2a1687/)
+### Contact: [r.estevezbella@gmail.com](mailto:r.estevezbella@gmail.com)
+
+### Video Demo:  https://youtu.be/3sdUplYJKD0
+
 #### Description:
 ##### It is a program for the creation of characters.
 
